@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Fern — Neighborhood Cafe</title>
+  <meta name="description" content="Little Fern is a cozy neighborhood cafe serving small-batch coffee, fresh breakfast, hearty lunches, and pastries baked every morning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="#3f5d43"/>
+        <path d="M16 25c0-6 0-10 0-13" stroke="#f5eede" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 14c-4-1-6-4-6-7 4 0 6 3 6 7zM16 17c4-1 6-4 6-7-4 0-6 3-6 7z" fill="#a8c3a0"/>
+      </svg>
+      <span>Little Fern</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Your neighborhood corner cafe</p>
+        <h1>Slow mornings, warm cups, good company.</h1>
+        <p class="hero-sub">
+          Little Fern pours small-batch coffee, bakes pastries before sunrise, and keeps a
+          comfy seat by the window with your name on it.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">See the Menu</a>
+          <a class="btn btn-ghost" href="#visit">Find Us</a>
+        </div>
+        <p class="hero-note">☕ Open daily from 7am · 42 Maple Street</p>
+      </div>
+      <div class="hero-photo">
+        <img src="hero.svg" alt="A cozy cafe counter with a latte, a fern plant, and morning light through the window" width="640" height="520" />
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu-section" id="menu">
+      <div class="section-head">
+        <h2>Our Menu</h2>
+        <p>Everything is made in-house, and our beans are roasted just down the road at Fern Hollow Roasters.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter menu by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="pastries">Pastries</button>
+      </div>
+
+      <ul class="menu-grid" id="menuGrid">
+        <!-- Coffee -->
+        <li class="menu-item" data-category="coffee">
+          <div class="item-top"><h3>House Drip</h3><span class="dots"></span><span class="price">$3.25</span></div>
+          <p>Rotating single origin, brewed fresh every 30 minutes.</p>
+        </li>
+        <li class="menu-item" data-category="coffee">
+          <div class="item-top"><h3>Fern Flat White</h3><span class="dots"></span><span class="price">$4.75</span></div>
+          <p>Double ristretto with silky whole milk. Our most-ordered cup.</p>
+        </li>
+        <li class="menu-item" data-category="coffee">
+          <div class="item-top"><h3>Maple Oat Latte</h3><span class="dots"></span><span class="price">$5.50</span></div>
+          <p>Espresso, oat milk, and a swirl of Vermont maple syrup.</p>
+        </li>
+        <li class="menu-item" data-category="coffee">
+          <div class="item-top"><h3>Cold Brew Tonic</h3><span class="dots"></span><span class="price">$5.25</span></div>
+          <p>18-hour cold brew over ice with a splash of citrus tonic.</p>
+        </li>
+        <li class="menu-item" data-category="coffee">
+          <div class="item-top"><h3>Honey Cardamom Cortado</h3><span class="dots"></span><span class="price">$4.95</span></div>
+          <p>Equal parts espresso and steamed milk, wildflower honey, a pinch of cardamom.</p>
+        </li>
+
+        <!-- Breakfast -->
+        <li class="menu-item" data-category="breakfast">
+          <div class="item-top"><h3>Fern Breakfast Bowl</h3><span class="dots"></span><span class="price">$10.50</span></div>
+          <p>Greek yogurt, granola, poached pear, toasted seeds, and local honey.</p>
+        </li>
+        <li class="menu-item" data-category="breakfast">
+          <div class="item-top"><h3>Sourdough Avocado Toast</h3><span class="dots"></span><span class="price">$11.00</span></div>
+          <p>Smashed avocado, chili flakes, pickled shallot, and a soft egg.</p>
+        </li>
+        <li class="menu-item" data-category="breakfast">
+          <div class="item-top"><h3>Ham &amp; Gruyère Croissant</h3><span class="dots"></span><span class="price">$9.75</span></div>
+          <p>Warm croissant, Black Forest ham, melted gruyère, and Dijon cream.</p>
+        </li>
+        <li class="menu-item" data-category="breakfast">
+          <div class="item-top"><h3>Buttermilk Pancake Stack</h3><span class="dots"></span><span class="price">$11.50</span></div>
+          <p>Three fluffy pancakes with whipped butter and warm berry compote.</p>
+        </li>
+
+        <!-- Lunch -->
+        <li class="menu-item" data-category="lunch">
+          <div class="item-top"><h3>Roast Chicken Sandwich</h3><span class="dots"></span><span class="price">$13.50</span></div>
+          <p>Herb-roasted chicken, garlic aioli, arugula, on toasted ciabatta.</p>
+        </li>
+        <li class="menu-item" data-category="lunch">
+          <div class="item-top"><h3>Tomato Basil Soup &amp; Grilled Cheese</h3><span class="dots"></span><span class="price">$12.75</span></div>
+          <p>Slow-simmered tomato soup with a three-cheese pressed sandwich.</p>
+        </li>
+        <li class="menu-item" data-category="lunch">
+          <div class="item-top"><h3>Harvest Grain Bowl</h3><span class="dots"></span><span class="price">$13.00</span></div>
+          <p>Farro, roasted squash, kale, feta, pepitas, and apple-cider vinaigrette.</p>
+        </li>
+        <li class="menu-item" data-category="lunch">
+          <div class="item-top"><h3>Daily Quiche</h3><span class="dots"></span><span class="price">$10.25</span></div>
+          <p>Ask what's in the case today — always with a little side salad.</p>
+        </li>
+
+        <!-- Pastries -->
+        <li class="menu-item" data-category="pastries">
+          <div class="item-top"><h3>Butter Croissant</h3><span class="dots"></span><span class="price">$4.00</span></div>
+          <p>Laminated over three days, baked at 5:30 every morning.</p>
+        </li>
+        <li class="menu-item" data-category="pastries">
+          <div class="item-top"><h3>Brown Butter Banana Bread</h3><span class="dots"></span><span class="price">$4.50</span></div>
+          <p>Toasted, with salted butter on request.</p>
+        </li>
+        <li class="menu-item" data-category="pastries">
+          <div class="item-top"><h3>Blueberry Corn Scone</h3><span class="dots"></span><span class="price">$4.25</span></div>
+          <p>Golden, crumbly, and packed with Maine blueberries.</p>
+        </li>
+        <li class="menu-item" data-category="pastries">
+          <div class="item-top"><h3>Cardamom Morning Bun</h3><span class="dots"></span><span class="price">$4.75</span></div>
+          <p>Sticky, swirled, and dusted with cardamom sugar.</p>
+        </li>
+        <li class="menu-item" data-category="pastries">
+          <div class="item-top"><h3>Olive Oil Cake Slice</h3><span class="dots"></span><span class="price">$5.00</span></div>
+          <p>Lemon-glazed, with a whisper of rosemary.</p>
+        </li>
+      </ul>
+      <p class="menu-empty is-hidden" id="menuEmpty">Nothing in this category right now — check back soon!</p>
+      <p class="menu-footnote">Ask about today's specials on the chalkboard. Most items can be made gluten-free — just let us know.</p>
+    </section>
+
+    <!-- Hours -->
+    <section class="section hours-section" id="hours">
+      <div class="section-head">
+        <h2>Opening Hours</h2>
+        <p>The coffee is on the second the doors open.</p>
+      </div>
+      <div class="hours-card">
+        <dl class="hours-list">
+          <div class="hours-row"><dt>Monday – Friday</dt><dd>7:00 am – 5:00 pm</dd></div>
+          <div class="hours-row"><dt>Saturday</dt><dd>8:00 am – 5:00 pm</dd></div>
+          <div class="hours-row"><dt>Sunday</dt><dd>8:00 am – 3:00 pm</dd></div>
+        </dl>
+        <p class="hours-note">Kitchen closes 45 minutes before we do. Closed on major holidays.</p>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section visit-section" id="visit">
+      <div class="section-head">
+        <h2>Find Us</h2>
+        <p>Tucked between the bookshop and the flower stand.</p>
+      </div>
+      <div class="visit-card">
+        <div class="visit-info">
+          <h3>Little Fern Cafe</h3>
+          <address>
+            42 Maple Street<br />
+            Corner of Maple &amp; 3rd<br />
+            Portland, ME 04101
+          </address>
+          <p><a href="tel:+12075550142">(207) 555-0142</a> · <a href="mailto:hello@littlefern.cafe">hello@littlefern.cafe</a></p>
+        </div>
+        <div class="visit-desc">
+          <h4>How to spot us</h4>
+          <p>
+            Look for the sage-green storefront with the big fern hanging by the door, one block
+            up from the river. Street parking is easy before 8am and after 3pm; the Elm Street
+            garage is a two-minute walk. We're right on the 4 and 7 bus lines, and there's a
+            bike rack out front.
+          </p>
+          <p class="visit-tip">🐶 Well-behaved dogs are welcome on the patio — water bowls provided.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Little Fern Cafe · 42 Maple Street, Portland, ME · Made with warmth ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

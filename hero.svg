@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Illustration of a cozy cafe interior with a latte on a wooden table, a hanging fern, and morning light through the window">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0e4cf"/>
+      <stop offset="1" stop-color="#e6d5b8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3d8"/>
+      <stop offset="1" stop-color="#f6e2b8"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b98a5e"/>
+      <stop offset="1" stop-color="#9c6f47"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="520" fill="url(#wall)"/>
+
+  <!-- window -->
+  <rect x="392" y="52" width="196" height="240" rx="10" fill="url(#glass)" stroke="#8a6a45" stroke-width="10"/>
+  <line x1="490" y1="56" x2="490" y2="288" stroke="#8a6a45" stroke-width="8"/>
+  <line x1="396" y1="170" x2="584" y2="170" stroke="#8a6a45" stroke-width="8"/>
+  <!-- sun + hills outside -->
+  <circle cx="540" cy="110" r="26" fill="#f2c063"/>
+  <path d="M396 250 q50 -34 94 -6 q46 30 94 4 v40 h-188 z" fill="#a8c3a0" opacity="0.85"/>
+  <!-- window sill -->
+  <rect x="378" y="288" width="224" height="16" rx="5" fill="#8a6a45"/>
+  <!-- small potted plant on sill -->
+  <rect x="540" y="258" width="34" height="30" rx="4" fill="#c96f4a"/>
+  <path d="M557 258 c0 -18 -12 -26 -20 -28 c2 12 6 22 20 28z" fill="#5f7d5b"/>
+  <path d="M557 258 c0 -18 12 -26 20 -28 c-2 12 -6 22 -20 28z" fill="#a8c3a0"/>
+
+  <!-- hanging fern -->
+  <line x1="120" y1="0" x2="120" y2="70" stroke="#6b6459" stroke-width="4"/>
+  <path d="M120 70 h0" />
+  <path d="M78 78 q42 -22 84 0 q-42 26 -84 0z" fill="#b7825a"/>
+  <g fill="#4f7351">
+    <path d="M120 76 c-30 -6 -48 -22 -54 -40 c18 2 38 14 54 40z"/>
+    <path d="M120 76 c30 -6 48 -22 54 -40 c-18 2 -38 14 -54 40z"/>
+    <path d="M120 78 c-26 4 -50 -2 -62 -14 c16 -6 40 -2 62 14z"/>
+    <path d="M120 78 c26 4 50 -2 62 -14 c-16 -6 -40 -2 -62 14z"/>
+    <path d="M120 74 c0 -20 8 -34 20 -42 c4 16 0 32 -20 42z"/>
+    <path d="M120 74 c0 -20 -8 -34 -20 -42 c-4 16 0 32 20 42z"/>
+  </g>
+
+  <!-- chalkboard menu -->
+  <rect x="60" y="150" width="120" height="150" rx="8" fill="#3f5d43" stroke="#8a6a45" stroke-width="6"/>
+  <line x1="80" y1="185" x2="160" y2="185" stroke="#f5eede" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="80" y1="210" x2="148" y2="210" stroke="#f5eede" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="80" y1="235" x2="158" y2="235" stroke="#f5eede" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="80" y1="260" x2="138" y2="260" stroke="#f5eede" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- string lights -->
+  <path d="M0 40 q160 60 320 20 q160 -40 320 10" fill="none" stroke="#6b6459" stroke-width="3" opacity="0.5"/>
+  <circle cx="80" cy="62" r="6" fill="#f2c063"/>
+  <circle cx="200" cy="58" r="6" fill="#e8a35c"/>
+  <circle cx="320" cy="52" r="6" fill="#f2c063"/>
+  <circle cx="440" cy="46" r="6" fill="#e8a35c"/>
+  <circle cx="560" cy="44" r="6" fill="#f2c063"/>
+
+  <!-- table -->
+  <rect x="0" y="380" width="640" height="140" fill="url(#wood)"/>
+  <line x1="0" y1="412" x2="640" y2="412" stroke="#8a6a45" stroke-width="3" opacity="0.5"/>
+  <line x1="0" y1="452" x2="640" y2="452" stroke="#8a6a45" stroke-width="3" opacity="0.35"/>
+
+  <!-- saucer + latte cup -->
+  <ellipse cx="300" cy="452" rx="86" ry="18" fill="#f5eede"/>
+  <ellipse cx="300" cy="446" rx="86" ry="18" fill="#fffdf8"/>
+  <path d="M252 372 h96 a8 8 0 0 1 8 8 v46 a26 26 0 0 1 -26 26 h-60 a26 26 0 0 1 -26 -26 v-46 a8 8 0 0 1 8 -8z" fill="#fffdf8"/>
+  <path d="M356 384 q34 0 34 22 q0 22 -34 22 v-14 q18 0 18 -8 q0 -8 -18 -8z" fill="#fffdf8"/>
+  <ellipse cx="300" cy="382" rx="48" ry="10" fill="#d9a05b"/>
+  <path d="M262 380 q20 -8 38 -2 q20 8 38 0" fill="none" stroke="#fffdf8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="284" cy="384" r="3" fill="#8a5a2b" opacity="0.4"/>
+  <circle cx="312" cy="386" r="3" fill="#8a5a2b" opacity="0.4"/>
+
+  <!-- steam -->
+  <path d="M282 344 q-8 -14 0 -26 q8 -12 0 -26" fill="none" stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M318 348 q-8 -14 0 -26 q8 -12 0 -26" fill="none" stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- croissant on a small plate -->
+  <ellipse cx="470" cy="446" rx="58" ry="13" fill="#fffdf8"/>
+  <path d="M428 436 q42 -34 84 0 q-12 12 -42 12 q-30 0 -42 -12z" fill="#d9a05b"/>
+  <path d="M448 420 q22 -8 44 0" fill="none" stroke="#b98a5e" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- folded newspaper -->
+  <rect x="120" y="428" width="96" height="26" rx="4" fill="#fffdf8" transform="rotate(-4 168 441)"/>
+  <line x1="132" y1="438" x2="204" y2="434" stroke="#b9b0a0" stroke-width="3" transform="rotate(-4 168 441)"/>
+  <line x1="132" y1="446" x2="196" y2="442" stroke="#d4cbb9" stroke-width="3" transform="rotate(-4 168 441)"/>
+</svg>
